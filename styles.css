@@ -1,0 +1,136 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+
+body{
+    height: 100%;
+    background-size:6% 5%;
+    background-image: url(./images/seta.png);
+    
+}
+
+header {
+    padding-bottom: 1em;
+    background: linear-gradient(180deg, #cb2222 50%, rgba(201, 209, 209, 0) 100%);
+    text-align: center;
+}
+
+.navbar {
+    padding-top: 1em;
+}
+
+.contenedor1{
+    background: white;
+    width: 400px;
+    padding: 35px;
+    margin: 35px auto;
+    box-shadow: 15px 30px 20px #021E73;
+    border-radius: 100px;
+}
+
+.contenedor2{
+    background: white;
+    width: 400px;
+    height: 70px;
+    box-shadow: 15px 20px 20px  #03A62C;
+    border-radius: 50px;
+    margin: 30px auto;
+    
+}
+
+h2, p{
+    text-align: center;
+    color:#053469;
+}
+
+h2{
+    padding-top: 10px;
+}
+
+.moneda{
+    height:200px;
+    margin: 20px;
+    transform-style: preserve-3d;
+    position:relative;
+}
+
+.moneda img{
+    width: 100%;
+}
+
+.cara, .cruz{
+    position: absolute;
+    width: 100%;
+    height: 100%;  
+    backface-visibility: hidden;
+}
+
+.cruz{ 
+    transform: rotateY(180deg);
+    
+}
+
+@keyframes gira-cara{
+    0%{
+        transform: rotateY(0);
+    }
+    100%{
+        transform: rotateY(2160deg);
+    } 
+}
+
+@keyframes gira-cruz{
+    0%{
+        transform: rotateY(0);
+    }
+    100%{
+        transform: rotateY(1980deg);
+    }
+}
+
+.contadores{
+    display: flex;
+    color: #053469;;
+    font-size: 16px;
+    padding: 20px;
+    margin-top: 55px;
+    margin-bottom: 40px;
+    box-shadow: -4px 5px 20px rgba(0,139,253,0.25);
+    border-radius: 50px;
+}
+
+.contadorCara{
+    margin-left: 20px;
+}
+
+.contadorCruz{
+    margin-left: 130px;
+}
+
+button{
+    font-size: 14px;
+    width: 120px;
+    margin-left: 30px;
+    padding: 15px 0;
+    border: none;
+
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.boton-tirar{
+    background: #2863FF;
+    color: white;
+}
+
+.boton-reiniciar{
+    margin-left: 7%;
+    background:  #cb2222;
+    color:white;
+}
+
